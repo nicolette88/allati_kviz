@@ -5,12 +5,12 @@ def ellenorizd(valasz1, helyes_valasz):
     while meg_talalgat and probaszam < 3:
         if valasz1.lower() == helyes_valasz.lower():
             print('Helyes válasz')
-            pontszam = pontszam + 3 - probaszam
+            pontszam = pontszam + 1
             meg_talalgat = False
         else:
             if probaszam < 2:
                 valasz1 = input(
-                    'Sajnálom, helytelen válasz. Próbálkozz ismét! :')
+                    'Sajnálom, helytelen válasz. Próbálkozz ismét! : ')
             probaszam = probaszam + 1
 
     if probaszam == 3:
